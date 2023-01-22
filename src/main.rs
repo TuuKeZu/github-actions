@@ -22,7 +22,7 @@ async fn main() -> Result<(), Error> {
 
     // terminal shouldn't terminate on close
     println!("Press any key to continue...");
-    std::io::stdin().read_line(&mut String::new()).unwrap();
+    std::io::stdin().read_line(&mut String::new()).unwrap(); 
 
     Ok(())
 }
