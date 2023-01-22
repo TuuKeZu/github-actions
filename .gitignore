@@ -1,1 +1,4 @@
 /target
+/version-cache
+/version-tmp
+Version.toml
