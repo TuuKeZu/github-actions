@@ -680,6 +680,7 @@ dependencies = [
 [[package]]
 name = "rustdate"
 version = "0.1.0"
+source = "git+https://github.com/TuuKeZu/rust-auto-update.git#31afba66bcea81a0397ec2cfecb56e6c8d68d7f1"
 dependencies = [
  "anyhow",
  "online",
