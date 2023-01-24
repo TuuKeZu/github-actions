@@ -7,7 +7,7 @@ type Error = Box<dyn std::error::Error>;
 #[tokio::main]
 async fn main() -> Result<(), Error> {
     UpdateBuilder::new()
-        .set_verbal(true)
+        .set_verbose(true)
         .set_github_user("TuuKeZu")
         .set_github_repo("github-actions")
         .set_binary_path(OsType::Windows, "x86_64-pc-windows-gnu.zip")
