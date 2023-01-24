@@ -11,7 +11,7 @@ async fn main() -> Result<(), Error> {
         .set_github_user("TuuKeZu")
         .set_github_repo("github-actions")
         .set_binary_path(OsType::Windows, "x86_64-pc-windows-gnu.zip")
-        .set_binary_path(OsType::Linux, "x86_64-apple-darwin.zip")
+        .set_binary_path(OsType::Linux, "x86_64-unknown-linux-musl.zip")
         .check_for_updates()
         .await?;
 
@@ -19,10 +19,9 @@ async fn main() -> Result<(), Error> {
     println!("-------------------");
     println!("> Hello, world!");
 
-
     // terminal shouldn't terminate on close
     println!("Press any key to continue...");
-    std::io::stdin().read_line(&mut String::new()).unwrap(); 
+    std::io::stdin().read_line(&mut String::new()).unwrap();
 
     Ok(())
 }
